@@ -17,7 +17,8 @@ Result:  A(v), the overall influence for each vertexes  v
     For all nodes  v  do{
         if  use-node-property  is True then{
             A(v)  ←  α(v);
-        }{
+        }
+        else{
             A(v)  ←  1;
         }
     }
