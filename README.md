@@ -4,7 +4,30 @@ This repository contains the implementation of the Soft-Kshell algorithm and sup
 ### Algorithm pseudocode
 ```{r, tidy=FALSE, eval=FALSE, highlight=FALSE }
 
-pseudocode
+\begin{algorithm}
+\caption{Soft K-shell Algorithm}\label{alg:three}
+\KwData{graph $G = (V, E)$, parameter $\beta$, node property $\alpha(v)$, use-node-property}
+\KwResult{$A(v)$, the overall influence for each nodes $v$}
+ initialization\;
+ \For{all nodes $v$}{
+    \eIf{use-node-property is $True$}{
+        $A(v) \gets \alpha(v)$\;
+    }{
+        $A(v) \gets 1$\;
+    }
+ }
+ minimum degree $m \gets 0$\;
+ \While{there is still $u$ s.t. $u \in G$}{
+    \For{\ for all nodes $u$}{
+        \If{$degree(u) \leq m$}{
+            find direct predessesor $v$ of $u$\;
+            $A(v) \gets A(v) + e^{-\beta(T(u) - T(v))}A(u)$\;
+            remove $v$ from $G$\;
+        }
+    }
+ }
+ \Return{$A(v)$ for all $v$ in $G$, sortbykey($V$, sortkey = $A(v)$}\;
+ \end{algorithm}
 
 ```
 
