@@ -1,43 +1,29 @@
-
-
----
-header-includes:
-  - \usepackage{algorithm2e}
----
-
-
 # Influential Node Detection on Graph on Event Sequence
 This repository contains the implementation of the Soft-Kshell algorithm and supplementary information \& results from its application to real-world datasets.
 
 ### Algorithm pseudocode
-```{r, tidy=FALSE, eval=FALSE, highlight=FALSE }
-
-\begin{algorithm}
-\caption{Soft K-shell Algorithm}\label{alg:three}
-\KwData{graph $G = (V, E)$, parameter $\beta$, node property $\alpha(v)$, use-node-property}
-\KwResult{$A(v)$, the overall influence for each nodes $v$}
+*Soft K-shell Algorithm*
+Data: graph G = (V, E), parameter β, node property α(v), use-node-property
+Result: A(v), the overall influence for each vertexes v
  initialization\;
- \For{all nodes $v$}{
-    \eIf{use-node-property is $True$}{
-        $A(v) \gets \alpha(v)$\;
+ For all nodes v do{
+    if use-node-property is True then{
+        A(v) ← α(v);
     }{
-        $A(v) \gets 1$\;
+        A(v) ← 1;
     }
  }
- minimum degree $m \gets 0$\;
- \While{there is still $u$ s.t. $u \in G$}{
-    \For{\ for all nodes $u$}{
-        \If{$degree(u) \leq m$}{
-            find direct predessesor $v$ of $u$\;
-            $A(v) \gets A(v) + e^{-\beta(T(u) - T(v))}A(u)$\;
-            remove $v$ from $G$\;
+ minimum degree m ← 0;
+ while there is still u s.t. u ∈ G do{
+    for all vertexes u do{
+        if degree(u) ≤ m then{
+            find direct predessesor v of u;
+            A(v) ← A(v) + e^β(T (u)−T (v))A(u);
+            remove v from G;
         }
     }
  }
- \Return{$A(v)$ for all $v$ in $G$, sortbykey($V$, sortkey = $A(v)$}\;
- \end{algorithm}
-
-```
+ return A(v) for all v in G, sortbykey(V, sortkey = A(v);
 
 ### Dataset
 The Soft-KShell algorithm is compared along with four other algorithms on six real-world data sets with various social interactions, the specifications of the data sets utilized in the studies are listed in Table below.
