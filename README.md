@@ -12,6 +12,7 @@ We give the pseudocode of the proposed Soft K-shell algorithm here.
 # Soft K-shell Algorithm
 Data: graph  G = (V, E), parameter  β, node property  α(v), use-node-property
 Result:  A(v), the overall influence for each vertexes  v
+
  initialization;
  For all nodes  v  do{
     if  use-node-property  is True then{
