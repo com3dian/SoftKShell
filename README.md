@@ -1,7 +1,7 @@
 # Influential Node Detection on Graph on Event Sequence
 This repository contains the implementation of the Soft-Kshell algorithm and supplementary results from its application to real-world datasets.
 
-| Data sets     | \makecell{$|V|$} | \makecell{$|E|$} | Max degree | Description                                    |
+| Data sets     | $|V|$            | $|E|$            | Max degree | Description                                    |
 |---------------|------------------|------------------|------------|------------------------------------------------|
 |NCF(reply)     | 998              | 541              | 8          |The reply data set includes the posts  (nodes) that are replying  to other posts or being replied to by other posts. The responding relation is represented by a directed edge.|
 
