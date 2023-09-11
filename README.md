@@ -2,6 +2,8 @@
 This repository contains the implementation of the Soft-Kshell algorithm and supplementary information \& results from its application to real-world datasets.
 
 ### Algorithm pseudocode
+We give the pseudocode of the proposed algorithm here.
+
 ```{r, highlight=TRUE}
 # Soft K-shell Algorithm
 Data: graph  G = (V, E), parameter  β, node property  α(v), use-node-property
