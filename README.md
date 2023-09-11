@@ -13,25 +13,25 @@ We give the pseudocode of the proposed Soft K-shell algorithm here.
 Data: graph  G = (V, E), parameter  β, node property  α(v), use-node-property
 Result:  A(v), the overall influence for each vertexes  v
 
- initialization;
- For all nodes  v  do{
-    if  use-node-property  is True then{
-        A(v)  ←  α(v);
-    }{
-        A(v)  ←  1;
-    }
- }
- minimum degree  m  ←  0;
- while there is still  u  s.t.  u  ∈  G  do{
-    for all vertexes  u  do{
-        if  degree(u)  ≤  m then{
-            find direct predessesor  v  of  u;
-            A(v)  ←  A(v)  +  e^(-β(T(u)−T(v)))A(u);
-            remove  v  from  G;
+    initialization;
+    For all nodes  v  do{
+        if  use-node-property  is True then{
+            A(v)  ←  α(v);
+        }{
+            A(v)  ←  1;
+        }
+     }
+    minimum degree  m  ←  0;
+    while there is still  u  s.t.  u  ∈  G  do{
+        for all vertexes  u  do{
+            if  degree(u)  ≤  m then{
+                find direct predessesor  v  of  u;
+                A(v)  ←  A(v)  +  e^(-β(T(u)−T(v)))A(u);
+                remove  v  from  G;
+            }
         }
     }
- }
- return  A(v)  for all  v  in  G, sortbykey(V, sortkey  =  A(v);
+    return  A(v)  for all  v  in  G, sortbykey(V, sortkey  =  A(v);
 ```
 
 ### Dataset
