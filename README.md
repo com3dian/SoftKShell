@@ -19,7 +19,7 @@ Result:  A(v), the overall influence for each vertexes  v
     for all vertexes  u  do{
         if  degree(u)  ≤  m then{
             find direct predessesor  v  of  u;
-            A(v)  ←  A(v)  +  e^(β(T (u)−T (v)))A(u);
+            A(v)  ←  A(v)  +  e^(β(T(u)−T(v)))A(u);
             remove  v  from  G;
         }
     }
