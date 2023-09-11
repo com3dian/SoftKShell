@@ -1,8 +1,8 @@
 # Influential Node Detection on Graph on Event Sequence
-This repository contains the implementation of the Soft-Kshell algorithm and supplementary information \& results from its application to real-world datasets.
+This repository contains the implementation of the Soft K-shell algorithm and supplementary information \& results from its application to real-world datasets.
 
 ### Algorithm pseudocode
-We give the pseudocode of the proposed algorithm here.
+We give the pseudocode of the proposed Soft K-shell algorithm here.
 
 ```{r, highlight=TRUE}
 # Soft K-shell Algorithm
