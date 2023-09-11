@@ -2,32 +2,11 @@
 This repository contains the implementation of the Soft-Kshell algorithm and supplementary information \& results from its application to real-world datasets.
 
 ### Algorithm pseudocode
----
-header-includes:
-  - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
----
-# Algorithm 1
-Just a sample algorithmn
-\begin{algorithm}[H]
-\DontPrintSemicolon
-\SetAlgoLined
-\KwResult{Write here the result}
-\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
-\Input{Write here the input}
-\Output{Write here the output}
-\BlankLine
-\While{While condition}{
-    instructions\;
-    \eIf{condition}{
-        instructions1\;
-        instructions2\;
-    }{
-        instructions3\;
-    }
-}
-\caption{While loop with If/Else condition}
-\end{algorithm} 
+```{r, tidy=FALSE, eval=FALSE, highlight=FALSE }
 
+pseudocode
+
+```
 
 ### Dataset
 The Soft-KShell algorithm is compared along with four other algorithms on six real-world data sets with various social interactions, the specifications of the data sets utilized in the studies are listed in Table below.
