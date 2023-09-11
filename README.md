@@ -1,3 +1,11 @@
+
+
+---
+header-includes:
+  - \usepackage{algorithm2e}
+---
+
+
 # Influential Node Detection on Graph on Event Sequence
 This repository contains the implementation of the Soft-Kshell algorithm and supplementary information \& results from its application to real-world datasets.
 
