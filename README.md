@@ -3,11 +3,8 @@ This repository contains the implementation of the Soft-Kshell algorithm and sup
 
 | Data sets     | \makecell{$|V|$} | \makecell{$|E|$} | Max degree | Description                                    |
 |---------------|------------------|------------------|------------|------------------------------------------------|
-|NCF(reply)     | 998              | 541              | 8          |The reply data set includes the posts  (nodes) 
-that are replying  to other posts or being
- replied to by other posts. The responding 
- relation is represented by a directed edge.|
- 
+|NCF(reply)     | 998              | 541              | 8          |The reply data set includes the posts  (nodes) that are replying  to other posts or being replied to by other posts. The responding relation is represented by a directed edge.|
+
 \hline
  NCF(quote) & 3746 & 2716 & 220 & \makecell{
  The quote data set contains posts (nodes) \\ 
