@@ -1,6 +1,8 @@
 # Influential Node Detection on Graph on Event Sequence
 This repository contains the implementation of the Soft-Kshell algorithm and supplementary information \& results from its application to real-world datasets.
 
+
+### Dataset
 The Soft-KShell algorithm is compared along with four other algorithms on six real-world data sets with various social interactions, the specifications of the data sets utilized in the studies are listed in Table below.
 
 | Datasets      |  V               | E                | Max degree | Description                                    |
