@@ -2,6 +2,7 @@
 This repository contains the implementation of the Soft-Kshell algorithm and supplementary information \& results from its application to real-world datasets.
 
 ### Algorithm pseudocode
+```{r}
 *Soft K-shell Algorithm*
 Data: graph G = (V, E), parameter β, node property α(v), use-node-property
 Result: A(v), the overall influence for each vertexes v
@@ -18,12 +19,13 @@ Result: A(v), the overall influence for each vertexes v
     for all vertexes u do{
         if degree(u) ≤ m then{
             find direct predessesor v of u;
-            A(v) ← A(v) + e^β(T (u)−T (v))A(u);
+            A(v) ← A(v) + e^(β(T (u)−T (v)))A(u);
             remove v from G;
         }
     }
  }
  return A(v) for all v in G, sortbykey(V, sortkey = A(v);
+```
 
 ### Dataset
 The Soft-KShell algorithm is compared along with four other algorithms on six real-world data sets with various social interactions, the specifications of the data sets utilized in the studies are listed in Table below.
