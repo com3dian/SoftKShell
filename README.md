@@ -20,7 +20,7 @@ Result:  A(v), the overall influence for each vertexes  v
         }{
             A(v)  ←  1;
         }
-     }
+    }
     minimum degree  m  ←  0;
     while there is still  u  s.t.  u  ∈  G  do{
         for all vertexes  u  do{
