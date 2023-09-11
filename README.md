@@ -13,3 +13,5 @@ The Soft-KShell algorithm is compared along with four other algorithms on six re
 |NCF(together)  | 38773            | 33490            | 799        |The network includes a collection of long-term tweets covering the three above interactions (reply, retweet, quote) together.|
 |NCJ            | 6242             | 4589             | 161        |The network includes a collection of short-term tweets only consider the replying connections.|
 |DBLP V1        | 348480           | 745252           | 1828       |Open citation network extracted from DBLP, ACM, MAG, and other sources.|
+
+where $\|V\|$ denotes the number of vertexes (nodes) in a graph and $\|E\|$ represents the number of edges in a graph.
