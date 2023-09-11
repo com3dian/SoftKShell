@@ -5,7 +5,7 @@ This repository contains the implementation of the Soft-Kshell algorithm and sup
 ### Dataset
 The Soft-KShell algorithm is compared along with four other algorithms on six real-world data sets with various social interactions, the specifications of the data sets utilized in the studies are listed in Table below.
 
-| Datasets      |  $\|V\|$             | $\|E\|$                | Max degree | Description                                    |
+| Datasets      |  $\|V\|$         | $\|E\|$          | Max degree | Description                                    |
 |---------------|------------------|------------------|------------|------------------------------------------------|
 |NCF(reply)     | 998              | 541              | 8          |The reply data set includes the posts  (nodes) that are replying  to other posts or being replied to by other posts. The responding relation is represented by a directed edge.|
 |NCF(quote)     | 3746             | 2716             | 220        |The quote data set contains posts (nodes) that are quoting other posts or being quoted by other posts.  One quoting interaction is a directed edge.|
