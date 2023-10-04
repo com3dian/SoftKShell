@@ -48,3 +48,11 @@ The Soft-KShell algorithm is compared along with four other algorithms on six re
 |DBLP V1        | 348480           | 745252           | 1828       |Open citation network extracted from DBLP, ACM, MAG, and other sources.|
 
 where $\|V\|$ denotes the number of vertexes (nodes) in a graph and $\|E\|$ represents the number of edges in a graph.
+
+# Features
+
+   - high detection power for large-scale social media datasets
+   - providing SIR simualtion API within the dataloader class
+   - Proposed and implemented Soft Secomposition algorithm
+   - Some other opinion leader mining algorithms including Leader Rank, K-Shell Iteration Factor, Random Influential Path selection, Mixed degree decomposition.
+
