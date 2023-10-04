@@ -49,10 +49,23 @@ The Soft-KShell algorithm is compared along with four other algorithms on six re
 
 where $\|V\|$ denotes the number of vertexes (nodes) in a graph and $\|E\|$ represents the number of edges in a graph.
 
-# Features
+### Features
 
-   - high detection power for large-scale social media datasets
-   - providing SIR simualtion API within the dataloader class
-   - Proposed and implemented Soft Secomposition algorithm
-   - Some other opinion leader mining algorithms including Leader Rank, K-Shell Iteration Factor, Random Influential Path selection, Mixed degree decomposition.
+* high detection power for large-scale social media datasets
+* providing SIR simualtion API within the dataloader class
+* Proposed and implemented Soft Secomposition algorithm
+* Some other opinion leader mining algorithms including [Leader Rank](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0021202), [K-Shell Iteration Factor](https://www.sciencedirect.com/science/article/abs/pii/S0378437116302333), [Random Influential Path selection](https://arxiv.org/abs/2112.02927), [Mixed degree decomposition](https://www.sciencedirect.com/science/article/abs/pii/S0375960113002260).
+
+### Required python packages
+
+* python == 3.8
+* EoN == 1.1
+* networkx >= 2.0
+* numpy >= 1.13
+* pandas
+
+### Optional packages depending on used functions
+
+* matlibplot
+* tqdm (Mozilla Public Licence)
 
