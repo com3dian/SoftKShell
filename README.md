@@ -5,6 +5,19 @@ This repository contains the implementation of the Soft K-shell algorithm and su
 
 Numerous research efforts have centered on identifying the most influential players in networked social systems. This problem is immensely crucial in the research of complex networks. Most existing techniques either model social dynamics on static networks only and ignore the underlying time-serial nature or model the social interactions as temporal edges without considering the influential relationship between them. In this paper, we propose a novel perspective of modeling social interaction data as the graph on event sequence, as well as the Soft K-Shell algorithm that analyzes not only the network’s local and global structural aspects, but also the underlying spreading dynamics. The extensive experiments validated the efficiency and feasibility of our method in various social networks from real world data. To the best of our knowledge, this work is the first of its kind.
 
+### Citation
+
+```Tex
+@inproceedings{lu2023influential,
+  title={Influential Node Detection on Graph on Event Sequence},
+  author={Lu, Zehao and Wang, Shihan and Ren, Xiao-Long and Costas, Rodrigo and Metze, Tamara},
+  booktitle={International Conference on Complex Networks and Their Applications},
+  pages={147--158},
+  year={2023},
+  organization={Springer}
+}
+```
+
 ### Algorithm pseudocode
 We give the pseudocode of the proposed Soft K-shell algorithm here.
 
